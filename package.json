@@ -1,8 +1,16 @@
 {
   "name": "studioapp",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "./src/index.ts",
   "repository": "git@github.com:arda-e/studioapp.git",
   "author": "Meric Arda Eren <mericardaeren@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.1.0",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4"
+  }
 }
