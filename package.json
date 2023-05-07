@@ -1,0 +1,8 @@
+{
+  "name": "studioapp",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:arda-e/studioapp.git",
+  "author": "Meric Arda Eren <mericardaeren@gmail.com>",
+  "license": "MIT"
+}
