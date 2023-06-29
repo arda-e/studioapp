@@ -1,7 +1,12 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement } from 'react'
+import { Login } from './pages'
 
 const App = (): ReactElement => {
-    return <div>App</div>;
+  return (
+    <>
+      <Login />
+    </>
+  )
 }
 
-export default App;
+export default App
