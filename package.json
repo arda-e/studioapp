@@ -5,6 +5,12 @@
   "repository": "git@github.com:arda-e/studioapp.git",
   "author": "Meric Arda Eren <mericardaeren@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "clean:build": "rm -rf dist",
+    "clean": "rm -rf dist node_modules yarn.lock pnpm-lock.yaml package-lock.json",
+  },
   "dependencies": {
     "@types/node": "^20.1.0",
     "@types/react": "^18.2.6",
@@ -12,5 +18,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.8"
   }
 }
