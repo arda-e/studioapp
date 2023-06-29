@@ -10,6 +10,7 @@
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "clean:build": "rm -rf dist",
     "clean": "rm -rf dist node_modules yarn.lock pnpm-lock.yaml package-lock.json",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "^20.1.0",
@@ -27,6 +28,16 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
   }
 }
